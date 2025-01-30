@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div>
+        <div class="title">
+            <h1>Loading Fun Crime on FiveM</h1>
+        </div>
+        <div class="solitaire">
+            <iframe src="https://newfies.github.io/solitaire-newfies-loadingscreen/standalone.html" name="myiFrame" scrolling="no"
+                frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px"
+                allowfullscreen></iframe>
+        </div>
+        <div class="subtitle">
+            <h1>Play Solitaire Or Wait Patiently Bitch</h1>
+        </div>
+    </div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    </script>
+</body>
+
+</html>

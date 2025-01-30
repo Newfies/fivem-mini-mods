@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'BankGothic';
+    src: url('bankgothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pricedown';
+    src: url('Pricedown.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title,
+.subtitle {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Pricedown';
+    color: white;
+    padding: 1% 1%;
+    font-size: 240%
+}
+
+.solitaire {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1% 1%;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: transform 0.05s linear;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed;
+    /* Ensures it stays on top */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* Highest layer */
+    pointer-events: none;
+    /* Prevents interference */
+    transition: transform 0.05s linear;
+    will-change: transform;
+}
+
+iframe {
+    border:3px #ffffff solid;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
